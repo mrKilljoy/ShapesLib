@@ -14,7 +14,7 @@ namespace ShapesLib
             _sides[2] = c;
 
             if (!IsValid())
-                throw new Exception("the triangle is not valid");
+                throw new ArgumentException("the triangle is not valid");
         }
 
         public double SideA => _sides[0];
